@@ -11,6 +11,8 @@ namespace LogicalPrograms
             Console.WriteLine("Choose 2 For Perfect Number:");
             Console.WriteLine("Choose 3 For check Prime Number or Not:");
             Console.WriteLine("Choose 4 For Reverse the Number:");
+            Console.WriteLine("Choose 5 For StopWatch:");
+
 
 
             int Option = int.Parse(Console.ReadLine());
@@ -34,6 +36,10 @@ namespace LogicalPrograms
                 case 4:
                     ReverseNumber reversenumber = new ReverseNumber();
                     reversenumber.Reversenumber();
+                    break;
+                case 5:
+                    StopWatch stopwatch = new StopWatch();
+                    stopwatch.Stopwatch();
                     break;
                 default:
                     Console.WriteLine("Invalied Input");
